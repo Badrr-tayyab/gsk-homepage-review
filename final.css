@@ -83,6 +83,7 @@
   .footer-grid{grid-template-columns:1.7fr 1fr 1fr}
   .footer-donate{grid-column:1/-1}
 }
+
 @media(max-width:760px){
   .theme-b .site-header{margin-top:0}
   .theme-a .impact-a-grid,.impact-b-intro,.community-b-top,.closing-b>.wrap{grid-template-columns:1fr}
@@ -132,3 +133,72 @@
   .closing-b-art .closing-b-pot{max-width:260px}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
+
+/* Final changes 2. Keep the established pages; correct the marked proportions. */
+.impact-a-copy h2 em{font-style:normal}
+.team-a-columns{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:stretch}
+.team-a-copy{display:flex;flex-direction:column;justify-content:space-between}
+.team-a-heading{margin-bottom:2.1rem}
+.team-a-heading h2{max-width:14ch}
+.team-a-copy .legacy-line{flex:1;display:flex;flex-direction:column}
+.team-a-copy .legacy-line article{flex:1;align-content:center}
+.team-a-copy .legacy-line article:last-child{padding-bottom:0;border-bottom:0}
+.team-a-visual{display:flex;flex-direction:column;gap:2rem}
+.team-a-intro{margin:0;max-width:31ch;color:var(--muted)}
+.team-a-visual .team-a-photo{flex:1;min-height:600px}
+.team-a-visual .team-a-photo img{position:absolute;inset:0;height:100%;min-height:0}
+.impact-b-stage{min-height:480px}
+.impact-b-photo img{height:480px;min-height:480px}
+.impact-b-facts{padding:1.2rem}
+.impact-b-facts .fact-grid>div{padding:1rem 1.2rem}
+.closing-b>.wrap{min-height:560px}
+.closing-b h2{font-size:clamp(4rem,6.6vw,6.9rem);line-height:1.04;letter-spacing:-.045em}
+.closing-b-copy>p:not(.eyebrow){margin:1.5rem 0 1.8rem}
+.closing-b-art{min-height:560px}
+.closing-b-halo{width:min(385px,72%);border:1px solid #ebd8a8;box-shadow:0 0 0 14px #f4e1b517,0 0 0 28px #6b14262b;top:24%}
+.closing-b-art .closing-b-pot{width:min(540px,96%);max-width:none;margin:0;filter:none}
+.closing-b-art .closing-b-leaves{bottom:-13%;opacity:.65}
+.closing-b-caption{top:19%;right:1%;width:95px;height:95px;font-size:.82rem}
+.theme-c .hero-c{height:800px;min-height:800px}
+.theme-c .hero-c-content{padding-top:4.2rem}
+.theme-c .hero-c h1{font-size:clamp(4.4rem,8.3vw,8.5rem);line-height:.98}
+.olive-gift-preview{margin-top:-310px;padding-bottom:2.5rem;background:transparent}
+.olive-gift-preview .gift-card{width:min(560px,100%);padding:1.8rem 2rem}
+.olive-gift-preview .gift-card h2{font-size:2.65rem;line-height:1.02}
+.theme-c .community-c{padding-bottom:3rem}
+.theme-c .closing-c{padding-top:3rem;padding-bottom:11rem}
+.closing-c>.wrap>img{width:100%;bottom:-15px}
+
+@media(min-width:761px) and (max-width:1050px){
+  .team-a-copy .legacy-line article{grid-template-columns:1fr;gap:.55rem;padding:1.2rem 0}
+  .team-a-copy .legacy-line article>span{grid-row:auto}
+  .theme-c .hero-c{height:740px;min-height:740px}
+  .olive-gift-preview{margin-top:-300px}
+}
+@media(max-width:760px){
+  .team-a-columns{grid-template-columns:1fr;gap:2.5rem}
+  .team-a-copy .legacy-line article:last-child{padding-bottom:1.4rem}
+  .team-a-visual .team-a-photo{min-height:400px;height:400px}
+  .impact-b-stage{min-height:0}
+  .impact-b-photo img{height:288px;min-height:288px}
+  .impact-b-facts{min-height:360px}
+  .impact-b-facts .fact-grid>div{padding:.8rem}
+  .closing-b>.wrap{min-height:0}
+  .closing-b h2{font-size:clamp(3.4rem,12vw,5rem);line-height:1.06}
+  .closing-b-art{min-height:380px}
+  .closing-b-art .closing-b-pot{width:365px;max-width:100%;margin:1.5rem auto 0}
+  .closing-b-halo{width:255px;max-width:75%;top:25%}
+  .closing-b-caption{width:78px;height:78px;top:17%;right:4%;font-size:.7rem}
+  .closing-b-art .closing-b-leaves{bottom:-20%}
+  .theme-c .hero-c{height:660px;min-height:660px}
+  .theme-c .hero-c-content{padding-top:3rem}
+  .theme-c .hero-c h1{font-size:clamp(3.1rem,12.4vw,5.4rem);line-height:1.02}
+  .theme-c .hero-c-content>p:not(.eyebrow){margin-top:1.2rem}
+  .olive-gift-preview{margin-top:-305px;padding-bottom:2rem}
+  .olive-gift-preview .gift-card{width:min(560px,100%);padding:1.4rem}
+  .olive-gift-preview .gift-card h2{font-size:2.25rem}
+  .theme-c .community-c{padding-bottom:2rem}
+  .theme-c .closing-c{padding-top:2.5rem;padding-bottom:8rem}
+  .closing-c>.wrap>img{width:150%;bottom:-5px}
+}
+.team-a-visual .team-a-photo img{object-position:center top}
