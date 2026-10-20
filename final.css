@@ -1,0 +1,134 @@
+/* Client-facing directions: no review ribbon, option switcher, or review footer. */
+.site-header{top:0}
+.theme-b .site-header{margin-top:16px}
+
+/* The photo covers show genuine supplied GSK imagery; the reel iframe loads on click. */
+.reel-frame{isolation:isolate;overflow:hidden}
+.reel-frame iframe{position:absolute;inset:0;z-index:1}
+.reel-cover{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;z-index:2}
+.reel-cover[hidden]{display:none}
+.video-trigger,.theme-b .hero-b .reels-section .video-trigger,.theme-c .video-trigger{z-index:3;background:linear-gradient(180deg,#0d231d18 0%,#0d231d7c 55%,#07130dcf 100%)}
+.theme-b .hero-b .reels-section .video-trigger{background:linear-gradient(180deg,#50101811 0%,#6514218c 60%,#300b13d8 100%)}
+.video-trigger:before,.video-trigger:after{display:none}
+.video-trigger strong{text-shadow:0 2px 15px #10251cbd}
+.video-trigger .play-symbol{box-shadow:0 0 0 9px #ffffff5a,0 8px 25px #0006}
+
+/* A: move the impact title into the story column beside the unaltered photograph. */
+.theme-a .impact-a-grid{grid-template-columns:.95fr 1.05fr;align-items:start;gap:5.5vw}
+.impact-a figure img{height:620px;object-position:center}
+.impact-a-copy{padding:1rem 0}
+.impact-a-copy .eyebrow{margin-bottom:1.2rem}
+.impact-a-lead{font:900 .8rem DM,Arial,sans-serif;letter-spacing:.13em;color:#ad302e;margin:0 0 .8rem!important}
+.impact-a-copy h2{font-size:clamp(3.8rem,5.1vw,6rem);line-height:.91;margin:0 0 1.6rem;max-width:none}
+.impact-a-copy>p:not(.eyebrow):not(.impact-a-lead):not(.source-line){font-size:1.04rem;max-width:58ch}
+.impact-a .fact-grid{margin:1.8rem 0 1.2rem}
+.impact-a .fact-grid>div{min-height:125px}
+
+/* B: balance the two-line heading and fill the red facts panel. */
+.impact-b-intro{grid-template-columns:1.23fr .77fr;align-items:end;gap:4vw}
+.impact-b-intro h2{font-size:clamp(3.5rem,5.2vw,5.8rem);line-height:.96;max-width:none}
+.impact-b-intro>p{font-size:1.05rem;max-width:48ch;margin:0}
+.impact-b-stage{min-height:600px}
+.impact-b-photo img{min-height:600px;object-position:center}
+.impact-b-facts{display:flex;align-items:stretch;padding:1.45rem}
+.impact-b-facts .fact-grid{width:100%;max-width:none;height:auto;grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:.65rem}
+.impact-b-facts .fact-grid>div{min-height:0;grid-template-columns:minmax(120px,.42fr) 1fr;gap:1rem;padding:1.3rem;border:2px solid #f8e4c6;background:#bd2732}
+.impact-b-facts .fact-grid strong{font-size:clamp(2.5rem,4vw,4.3rem)}
+.impact-b-facts .fact-grid span{font-size:.88rem;line-height:1.45;max-width:26ch}
+.community-b>.wrap>.eyebrow{margin-bottom:1.4rem}
+.community-b-top{grid-template-columns:1.28fr .72fr;gap:4vw;align-items:end}
+.community-b-top h2{font-size:clamp(3.4rem,5.2vw,5.6rem);line-height:.96;max-width:none}
+.community-b-top>p{max-width:36ch;margin:0 0 .35rem;font-size:1.03rem}
+.community-b-grid{margin:2.7rem 0 2rem}
+.community-b-grid>div{min-height:195px}
+.closing-b{background:#c91f30 url('assets/red-ground.svg') center/cover no-repeat}
+.closing-b>.wrap{grid-template-columns:.9fr 1.1fr;min-height:640px}
+.closing-b h2{font-size:clamp(4.6rem,7.7vw,8.5rem)}
+.closing-b-art{position:relative;min-height:600px;display:grid;place-items:center}
+.closing-b-halo{position:absolute;width:min(560px,95%);aspect-ratio:1;border-radius:50%;border:2px solid #f4e1b5;box-shadow:0 0 0 24px #f4e1b51b,0 0 0 50px #6b142648;background:#a5232b}
+.closing-b-art .closing-b-pot{position:relative;z-index:2;width:min(500px,86%);margin:2rem 0 0;filter:drop-shadow(16px 16px 0 #711b24)}
+.closing-b-art .closing-b-leaves{position:absolute;z-index:3;width:125%;max-width:none;bottom:-12%;left:-12%;pointer-events:none;opacity:.9;filter:none}
+.closing-b-caption{position:absolute;z-index:4;right:3%;top:7%;display:grid;place-items:center;text-align:center;border-radius:50%;width:116px;height:116px;background:#f4e3b8;color:#183d2b;font:900 1rem/1.05 Archivo,Arial,sans-serif;transform:rotate(8deg)}
+
+/* C: bring the giving card closer to the illustrated hero and use a real photo in the story. */
+.theme-c .hero-c{height:735px;min-height:735px}
+.olive-gift-preview{margin-top:-150px;padding-bottom:1.8rem;background:#f6f1d8}
+.olive-gift-preview .gift-card{width:min(470px,100%);padding:1.6rem}
+.olive-gift-preview .gift-card h2{font-size:2.65rem}
+.team-c-illustration{background:#a8bd8d}
+.team-c-illustration>img{left:0;bottom:0;width:100%;max-width:100%;height:100%;object-fit:cover;object-position:center}
+.legacy-seal{z-index:2;top:auto;bottom:1.5rem;left:auto;right:1.5rem;transform:none;width:155px;height:155px}
+.community-c-image img{height:410px}
+.closing-c{padding-bottom:7rem}
+.closing-c>.wrap>img{width:min(720px,90%);left:50%;right:auto;bottom:-90px;transform:translateX(-50%);max-width:unset}
+
+/* A/B/C: real white transparent logo and a useful dark footer. */
+.site-footer{padding:4.5rem 0 1.3rem}
+.site-footer .brand img{background:none;padding:0;width:230px;max-height:none}
+.footer-grid{grid-template-columns:1.7fr .85fr 1fr 1.1fr;gap:3.5vw}
+.footer-grid>div:first-child p{max-width:35ch}
+.footer-donate{align-self:start;background:#274b36;border:1px solid #718e6a;padding:1.35rem}
+.footer-donate>span{font-size:.67rem;font-weight:900;letter-spacing:.14em;color:#d6e6bf}
+.footer-donate>a{display:block!important;margin:1.2rem 0!important;padding:.8rem 1rem;background:#c7282e;color:#fff!important;font-weight:900!important;text-align:center}
+.footer-donate>small{color:#d6e6c7!important;line-height:1.45}
+.theme-b .site-footer{border-top:10px solid #eedda9}
+.theme-a .site-footer{border-top:10px solid #be2c2b}
+.theme-c .site-footer{border-top:10px solid #8da663}
+
+@media(max-width:1050px){
+  .impact-b-facts .fact-grid>div{grid-template-columns:100px 1fr}
+  .impact-b-facts .fact-grid strong{font-size:2.8rem}
+  .closing-b>.wrap{min-height:500px}
+  .closing-b-art{min-height:500px}
+  .footer-grid{grid-template-columns:1.7fr 1fr 1fr}
+  .footer-donate{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .theme-b .site-header{margin-top:0}
+  .theme-a .impact-a-grid,.impact-b-intro,.community-b-top,.closing-b>.wrap{grid-template-columns:1fr}
+  .impact-a figure img{height:360px}
+  .impact-a-copy{padding-top:2rem}
+  .impact-a-copy h2{font-size:clamp(3.2rem,11vw,4.8rem)}
+  .impact-b-intro h2{font-size:clamp(2.7rem,10vw,4rem)}
+  .impact-b-intro>p{margin-top:1rem}
+  .impact-b-stage{min-height:0}
+  .impact-b-photo img{height:360px;min-height:360px}
+  .impact-b-facts{min-height:400px}
+  .impact-b-facts .fact-grid>div{grid-template-columns:95px 1fr;padding:1rem}
+  .impact-b-facts .fact-grid strong{font-size:2.4rem}
+  .impact-b-facts .fact-grid span{font-size:.79rem}
+  .community-b-top h2{font-size:clamp(3rem,10vw,5rem)}
+  .community-b-top>p{margin-top:1rem}
+  .theme-b .team-b-header h2{font-size:clamp(2.55rem,9vw,4rem)}
+  .team-c-heading h2{font-size:clamp(2.35rem,9vw,4rem)}
+  .closing-b>.wrap{min-height:0}
+  .closing-b-art{min-height:410px}
+  .closing-b-art .closing-b-pot{max-width:310px;margin:0}
+  .closing-b-art .closing-b-leaves{bottom:-20%;width:140%;left:-20%}
+  .closing-b-halo{max-width:350px}
+  .closing-b-caption{right:1%;top:2%;width:85px;height:85px;font-size:.75rem}
+  .theme-c .hero-c{height:640px;min-height:640px}
+  .olive-gift-preview{margin-top:-60px;padding-bottom:1.3rem}
+  .olive-gift-preview .gift-card{width:100%}
+  .community-c-image img{height:310px}
+  .closing-c>.wrap>img{width:min(550px,105%);bottom:-55px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-grid>div:first-child,.footer-donate{grid-column:1/-1}
+}
+@media(max-width:430px){
+  .theme-c .hero-c{height:595px;min-height:595px}
+  .olive-gift-preview{margin-top:-34px}
+  .olive-gift-preview .gift-card h2{font-size:2.25rem}
+  .impact-a-copy h2{font-size:3.35rem}
+  .impact-b-intro h2{font-size:2.6rem}
+  .impact-b-facts .fact-grid>div{grid-template-columns:78px 1fr;gap:.6rem}
+  .impact-b-facts .fact-grid strong{font-size:2rem}
+  .impact-b-facts .fact-grid span{font-size:.74rem}
+  .community-b-top h2{font-size:2.25rem;line-height:1.05}
+  .theme-b .team-b-header h2{font-size:2.55rem}
+  .team-c-heading h2{font-size:2.35rem;line-height:1.02}
+  .closing-b-art{min-height:340px}
+  .closing-b-halo{max-width:285px}
+  .closing-b-art .closing-b-pot{max-width:260px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
