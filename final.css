@@ -202,3 +202,19 @@
   .closing-c>.wrap>img{width:150%;bottom:-5px}
 }
 .team-a-visual .team-a-photo img{object-position:center top}
+
+/* Final art preference: original open pot with breathing room inside the halo. */
+.closing-b-halo{width:min(450px,88%);top:15%}
+.closing-b-art .closing-b-pot{width:min(400px,76%);margin:0}
+@media(max-width:760px){
+  .closing-b-halo{width:min(290px,89%);max-width:none;top:18%}
+  .closing-b-art .closing-b-pot{width:min(260px,78%);max-width:none;margin:0}
+}
+
+/* Final direction: one larger original soup pot, with all surrounding art removed. */
+.closing-b-art .closing-b-pot{width:min(580px,100%);max-width:none;margin:0;filter:none}
+.closing-b-art{min-height:560px}
+@media(max-width:760px){
+  .closing-b-art{min-height:400px}
+  .closing-b-art .closing-b-pot{width:min(360px,100%);max-width:none;margin:0}
+}
