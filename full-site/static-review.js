@@ -1,0 +1,12 @@
+(()=>{const params=new URLSearchParams(location.search),arabic=params.get('lang')==='ar';
+ const normalize=s=>s.trim().replace(/\s+/g,' ');
+ const localHref=href=>{try{const u=new URL(href,location.href);return u.origin===location.origin&&u.pathname.includes('/full-site/')}catch{return false}};
+ const retainLanguage=()=>document.querySelectorAll('a[href]').forEach(a=>{if(!localHref(a.href))return;const u=new URL(a.href);if(arabic)u.searchParams.set('lang','ar');else u.searchParams.delete('lang');a.href=u.href});
+ if(arabic){document.documentElement.lang='ar';document.documentElement.dir='rtl';
+  fetch('arabic.json').then(r=>r.json()).then(dict=>{const translate=s=>dict[normalize(s)]||s;
+   const walk=()=>{const tree=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=tree.nextNode()){if(n.parentElement.closest('script,style,svg,textarea,[contenteditable]'))continue;const t=translate(n.nodeValue);if(t!==n.nodeValue)n.nodeValue=t}document.querySelectorAll('[aria-label],[placeholder]').forEach(el=>['aria-label','placeholder'].forEach(k=>{if(el.hasAttribute(k))el.setAttribute(k,translate(el.getAttribute(k)))}));retainLanguage()};
+   walk();new MutationObserver(walk).observe(document.body,{childList:true,subtree:true});
+  }).catch(()=>retainLanguage());
+ }else retainLanguage();
+ const form=document.querySelector('form[action="contact-send.php"]');if(form)form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('[data-form-status]');if(status)status.textContent=arabic?'هذه معاينة للواجهة. يرجى استخدام رابط البريد الإلكتروني للتواصل مع الفريق.':'This is a frontend review. Please use the email link to contact the team.'});
+})();
