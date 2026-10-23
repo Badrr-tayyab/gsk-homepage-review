@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+<defs>
+  <pattern id="grain" width="33" height="37" patternUnits="userSpaceOnUse"><path d="m4 7 3-1m14 12 2 3m-8 9 4-1m15-20 2-3" stroke="#f6eccd" stroke-width="1.5"/><circle cx="26" cy="31" r="1.2" fill="#f6eccd"/></pattern>
+  <pattern id="weave" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M0 0 35 35M35 0 0 35M0 17.5 17.5 0 35 17.5 17.5 35Z" stroke="#173b2b" stroke-width="2"/><path d="M0 4 31 35M4 0 35 31" stroke="#173b2b" stroke-width=".8"/></pattern>
+  <clipPath id="body"><path d="M154 354 175 634Q187 710 397 714T619 638L646 354Z"/></clipPath>
+</defs>
+<!-- Decorative print-style cooking pot, not documentary imagery. -->
+<ellipse cx="405" cy="735" rx="302" ry="23" fill="#0a2118" opacity=".3"/>
+<g stroke="#f4e9c9" stroke-linecap="round">
+  <path d="M331 242C270 190 387 174 346 111C325 79 335 50 356 24" stroke-width="17"/>
+  <path d="M436 234C486 189 397 170 432 118C447 95 449 77 442 62" stroke-width="10"/>
+</g>
+<path d="M171 376 110 367Q75 366 80 403L90 444Q95 462 156 451M631 377 686 364Q721 360 716 395L706 439Q700 459 642 448" stroke="#0b251a" stroke-width="30"/>
+<path d="M171 376 110 367Q75 366 80 403L90 444Q95 462 156 451M631 377 686 364Q721 360 716 395L706 439Q700 459 642 448" stroke="#eddfbb" stroke-width="7"/>
+<path d="M154 354 175 634Q187 710 397 714T619 638L646 354Z" fill="#0d291e" stroke="#eee3bf" stroke-width="7"/>
+<path d="M154 354 175 634Q187 710 397 714T619 638L646 354Z" fill="url(#grain)" opacity=".45"/>
+<path d="m190 393 17 229q9 36 59 46M215 413l13 191M587 426l-13 178" stroke="#ecdfb5" stroke-width="6" stroke-linecap="round"/>
+<path d="M190 654Q393 738 601 659" stroke="#eee3bf" stroke-width="5"/>
+<ellipse cx="401" cy="352" rx="260" ry="70" fill="#0b241b" stroke="#f3e6bf" stroke-width="9"/>
+<path d="M167 349Q201 291 403 287T635 347Q400 413 167 349Z" fill="#eee3bf" stroke="#0b241b" stroke-width="7"/>
+<path d="M192 343Q403 381 608 341M213 326Q400 288 586 325" stroke="#193b2b" stroke-width="4"/>
+<path d="m348 292 5-32q2-14 48-14t48 14l5 32" fill="#133225" stroke="#eee3bf" stroke-width="7"/>
+<path d="M166 349Q400 421 639 350" stroke="#f4e9c9" stroke-width="6"/>
+<!-- Draped woven kitchen cloth with a red edge and printed crosshatch. -->
+<path d="M466 333Q513 326 560 344L613 689 563 736 494 695 469 405Z" fill="#f2e5c3" stroke="#143626" stroke-width="5"/>
+<path d="m478 346 53 2 54 341-26 21-48-25-28-280Z" fill="url(#weave)"/>
+<path d="M537 338 558 343 611 687 590 709Z" fill="#c62832"/>
+<path d="M548 349 598 686M503 684l57 34 41-29" stroke="#fff0d2" stroke-width="4"/>
+<path d="m500 695 2 16m10-9 3 16m10-8 4 16m10-8 5 15m10-9 4 17m11-11 6 14m5-23 7 13m2-24 8 12m1-24 8 12" stroke="#e9dbb8" stroke-width="4"/>
+<path d="M176 381Q210 395 256 403M284 410l31 4M205 681l18 5M235 689l26 7" stroke="#fff0cc" stroke-width="3" stroke-linecap="round"/>
+</svg>
